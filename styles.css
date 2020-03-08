@@ -233,6 +233,10 @@
         color: #ffffff;
     }
     
+    .forget-pass {
+        justify-content: flex-end;
+    }
+    
     .modal-body {
         padding-top: 50px;
     }

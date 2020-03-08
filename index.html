@@ -170,10 +170,10 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="width: 599px;" role="document">
             <div class="modal-content">
-                <div class="modal-head">
+                <!-- <div class="modal-head">
                     ĐĂNG KÝ
-                </div>
-                <div class="modal-body">
+                </div> -->
+                <!-- <div class="modal-body">
                     <form class="form-horizontal">
                         <div class="form-group d-flex">
                             <label class="control-label col-sm-4 text-right" for="name">Họ tên:</label>
@@ -191,7 +191,7 @@
                             <label class="control-label col-sm-4 text-right" for="pass">Password</label>
                             <div class="col-sm-8">
                                 <input type="password" class="form-control" id="password">
-                                <!-- <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> -->
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                         </div>
                         <div class="form-group d-flex ">
@@ -244,7 +244,60 @@
                             </div>
                         </div>
                     </form>
+                </div> -->
+
+
+                <div class="modal-head">
+                    ĐĂNG NHẬP
                 </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+
+                        <div class="form-group d-flex">
+                            <label class="control-label col-sm-4 text-right" for="email">Email</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex">
+                            <label class="control-label col-sm-4 text-right" for="pass">Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="password">
+                                <!-- <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-8 d-flex">
+                                <span class="d-flex"><a href="#" class="pl-1"> Quên mật khẩu</a></span>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="custom-control custom-checkbox col-sm-8 d-flex">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" style="font-weight: normal;" for="customControlAutosizing">Ghi nhớ tôi</label>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-8 d-flex">
+                                <button class="register">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-8 d-flex">
+                                <span class="d-flex">Bạn đã có tài khoản? <a href="#" class="pl-1"> Đăng ký ngay</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
@@ -254,11 +307,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 <script>
     function myFunction() {
-        var x = document.getElementsByClassName("toggle-password ");
-        if (x.type === "password ") {
-            x.type = "text ";
+        var x = document.getElementsByClassName("toggle-password");
+        if (x.type === "password") {
+            x.type = "text";
         } else {
-            x.type = "password ";
+            x.type = "password";
         }
     }
 </script>
