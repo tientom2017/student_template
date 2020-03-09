@@ -3,14 +3,16 @@ body {
 }
 
 .upload-doc {
-    padding: 42px 50px;
-    text-align: center;
+    padding: 42px 25px;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
     margin: 60px 0px 100px 0px;
     background: #ffffff;
 }
 
-.upload-doc .title-upload {}
+.upload-doc .title-upload {
+    padding: 10px 0px;
+    text-align: center;
+}
 
 .upload-doc .title-upload h2 {
     font-size: 36px;
@@ -20,4 +22,65 @@ body {
     line-height: 1.22;
     letter-spacing: normal;
     color: #3190ff;
+}
+
+.title-tabs a {
+    color: #505050;
+    border-bottom: 7px solid #f1f1f1 !important;
+}
+
+.title-tabs a.active {
+    border-color: unset !important;
+    border-bottom: 7px solid #ff8e33 !important;
+    font-weight: bold;
+    font-size: 20px;
+    color: #505050;
+    border: unset;
+}
+
+.blue {}
+
+.orange {}
+
+.title-tabs .nav-item.nav-link {
+    font-size: 20px;
+}
+
+.title-tabs .nav-item.nav-link:hover {
+    border: unset;
+}
+
+.upload-next {
+    padding: 15px 90px;
+    background-color: #ff8e33;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-content>.active {
+    padding: 20px 10px;
+}
+
+.check {
+    color: #3190ff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.desc-upload {
+    font-size: 20px;
+    color: #505050;
+}
+
+.desc-upload-txt {
+    font-size: 14px;
+}
+
+.upload-content {
+    border: solid 1px #f1f1f1;
+    background-color: #fafafa;
+    padding: 28px;
 }
