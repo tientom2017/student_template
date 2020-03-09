@@ -114,13 +114,49 @@
     
     .doc-items {
         height: 200px;
+        overflow: hidden;
     }
     
     .item-detail {
         float: left;
         width: 25%;
+        position: relative;
     }
     
+    .doc-details {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 80px;
+        transition: height 0.5s;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+    }
+
+    .doc-details:hover {
+        height: 125px;
+    }
+
+    .doc-details a {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .doc-details a:hover {
+        color: #ffffff;
+    }
+    
+    .doc-details .doc-details-info {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 11px;
+        color: #ffeb00;
+        padding-top: 5px;
+    }
+
     .item-detail-title {
         background-color: #3190ff;
         height: 200px;
@@ -160,6 +196,7 @@
     .has-search .form-control {
         padding-left: 2.375rem;
         border-radius: 0px;
+        font-size: 12px;
     }
     
     .has-search .form-control-feedback {
@@ -173,6 +210,7 @@
         pointer-events: none;
         color: #aaa;
         border-radius: 0px;
+        font-size: 12px;
     }
     
     .modal-content {
@@ -192,6 +230,48 @@
         font-style: normal;
         letter-spacing: normal;
         color: #676a6c;
+    }
+
+    .btn-custom {
+        border-radius: 0px;
+        border: 1px solid #ced4da;
+        font-size: 12px;
+        color: #505050;
+    }
+    .btn-coins{
+								  
+        background-color: #44d560;
+        color: #ffffff;
+    }
+    .btn-upload{
+        background-color: #ff8e33;
+        color: #ffffff;
+    }
+
+    .btn-detail {		
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: normal;
+        text-align: left;
+        background-color: #ffeb00;
+        border: none;
+        cursor: pointer;
+    }
+
+    .wrap-btn-detail {
+        justify-content: space-between;
+    }
+
+    .fa-angle {
+        position: absolute;		   
+        color: #ffffff;
+        top: 10px;
+        right: 14px;
+        font-size: 25px;
+        font-weight: bold;
     }
     
     .modal-head {

@@ -19,7 +19,7 @@
             <div class="wrap-header col-md-8">
                 <div class="header-menu float-right">
                     <ul>
-                        <li style="padding-left: 0px;"><a href="#">Chia sẻ phòng trọ 123</a></li>
+                        <li style="padding-left: 0px;"><a href="#">Chia sẻ phòng trọ</a></li>
                         <li><a href="#" class="link-active">Chia sẻ tài liệu</a></li>
                         <li><a href="#">Việc làm sinh viên</a></li>
                         <li><a href="#">Hỗ trợ</a></li>
@@ -53,67 +53,256 @@
                 </div>
                 <div class="col-md-9 col-sm-12 col-xs-12 float-right">
                     <div class="control d-flex">
-                        <div class="form-group has-search">
+                        <div class="form-group has-search pr-3">
                             <span class="fa fa-search form-control-feedback"></span>
                             <input type="text" class="form-control" placeholder="Tìm kiếm tài liệu">
                         </div>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Action</a>
-                                <a href="#" class="dropdown-item">Another action</a>
+                        <div class="dropdown show pr-2 pl-1">
+                            <a class="btn btn-custom dropdown-toggle" href="https://example.com" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Chuyên ngành <i class="fa fa-angle-down pl-3" style="color: #3190ff;"
+                                    aria-hidden="true"></i>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Action</a>
-                                <a href="#" class="dropdown-item">Another action</a>
+
+                        <div class="dropdown show pr-3">
+                            <a class="btn btn-custom dropdown-toggle" href="https://example.com" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Trường ĐH <i class="fa fa-angle-down pl-3" style="color: #3190ff;"
+                                    aria-hidden="true"></i>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
+
+                        <div class="pr-3 pl-1">
+                            <a class="btn btn-custom" href="https://example.com" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-filter" style="color: #3190ff;" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="pl-1">
+                            <a class="btn btn-custom btn-coins" href="https://example.com" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nạp xu
+                            </a>
+                        </div>
+
+                        <div class="pl-2">
+                            <a class="btn btn-custom btn-upload" href="https://example.com" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tải lên
+                            </a>
+                        </div>
+
                     </div>
                     <div class="list-document">
-                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12 mt-3">
+                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12">
                             <div class="item">
                                 <div class="item-detail item-detail-title">
                                     <h2>TÀI LIỆU NỔI BẬT</h2>
                                     <button class="btn-view-all mt-4">Xem tất cả <i class="fa fa-angle-right ml-1 font-weight-bold"></i></button>
                                 </div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+													
+													
+													
                         </div>
-                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12 mt-3">
+                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12 mt-4">
                             <div class="item">
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
+                                
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="item-detail item-detail-title">
                                     <h2>TÀI LIỆU NỔI BẬT</h2>
                                     <button class="btn-view-all mt-4">Xem tất cả <i class="fa fa-angle-right ml-1 font-weight-bold"></i></button>
                                 </div>
                             </div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+													
+													
+													
                         </div>
-                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12 mt-3">
+                        <div class="doc-items cod-md-12 cod-sm-12 cod-xs-12 mt-4">
                             <div class="item">
                                 <div class="item-detail item-detail-title">
                                     <h2>TÀI LIỆU NỔI BẬT</h2>
                                     <button class="btn-view-all mt-4">Xem tất cả <i class="fa fa-angle-right ml-1 font-weight-bold"></i></button>
                                 </div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
-                                <div class="item-detail"><img width="205px" height="200px" src="./images/73925_photo1.png" alt=""></div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-detail">
+                                    <img width="205px" height="200px" src="./images/73925_photo1.png" alt="">
+                                    <div class="doc-details">
+                                        <div>
+                                            <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                            <i class="fa fa-angle-right fa-angle"></i>
+                                        </div>
+                                        <div class="doc-details-info">
+                                            <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                            <div>172 tài liệu</div>
+                                            <div>720 lượt tải</div>
+                                        </div>
+                                        <div class="d-flex pt-2 wrap-btn-detail">
+                                            <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan tâm</button>
+                                            <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+													
+													
+													
                         </div>
                     </div>
                 </div>
