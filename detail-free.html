@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header-area">
+        <div class="container">
+            <div class="wrap-header col-md-4">
+                <span class="st-logo"><a href="./index.html">SINH VIÊN VIỆT NAM</a></span>
+            </div>
+            <div class="wrap-header col-md-8">
+                <div class="header-menu float-right">
+                    <ul>
+                        <li style="padding-left: 0px;"><a href="#">Chia sẻ phòng trọ</a></li>
+                        <li><a href="#" class="link-active">Chia sẻ tài liệu</a></li>
+                        <li><a href="#">Việc làm sinh viên</a></li>
+                        <li><a href="#">Hỗ trợ</a></li>
+                        <li><a href="#">Đăng nhập/ Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="col-md-9 col-sm-12 col-xs-12 float-left">
+                <div class="control d-flex">
+                    <div class="form-group has-search pr-3">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm tài liệu">
+                    </div>
+                    <div class="dropdown show pr-2 pl-1">
+                        <a class="btn btn-custom dropdown-toggle" href="https://example.com" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Chuyên ngành <i class="fa fa-angle-down pl-3" style="color: #3190ff;"
+                                aria-hidden="true"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown show pr-3">
+                        <a class="btn btn-custom dropdown-toggle" href="https://example.com" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Trường ĐH <i class="fa fa-angle-down pl-3" style="color: #3190ff;" aria-hidden="true"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <div class="pr-3 pl-1">
+                        <a class="btn btn-custom" href="https://example.com" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-filter" style="color: #3190ff;" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="pl-1">
+                        <a class="btn btn-custom btn-coins" href="https://example.com" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nạp xu
+                        </a>
+                    </div>
+
+                    <div class="pl-2">
+                        <a class="btn btn-custom btn-upload" href="https://example.com" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tải lên
+                        </a>
+                    </div>
+                </div>
+                <div class="folder-title d-flex">
+                    <div>
+                        <a href=""><span>Trang chủ </span></a>
+                    </div>
+                    <div>
+                        <a href=""><span> <i class="fa fa-angle-double-right pl-2" aria-hidden="true"></i> Tài liệu
+                                chuyên ngành</span></a>
+                    </div>
+                    <div>
+                        <a href=""><span> <i class="fa fa-angle-double-right pl-2" aria-hidden="true"></i> Bộ luận văn
+                                thạc sĩ quản lý giáo dục</span></a>
+                    </div>
+                </div>
+                <div id="btnContainer" class="text-right pt-3">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="doccument-title">
+                            TÀI LIỆU CHUYÊN NGÀNH
+                        </h2>
+                    </div>
+                    <div class="text-left pt-2">
+                        <span class="fa fa-star star checked"></span>
+                        <span class="fa fa-star star checked"></span>
+                        <span class="fa fa-star star checked"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                    </div>
+                    <div class="doc-info justify-content-between d-flex pt-3">
+                        <p>Chia sẻ bởi: admin</p>
+                        <p>Ngày: 20/02/2020</p>
+                        <p>Loại: PDF</p>
+                        <p>Số tài liệu: 6</p>
+                        <p>Lượt xem: 1072</p>
+                        <p>Lượt tải: 72</p>
+                    </div>
+                    <div class="btn-download">
+                        <button class="btn-custom"><i class="fa fa-heart"></i> Quan tâm</button>
+                        <button class="btn-custom"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống (20 xu)</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="wrap-doc-detail">
+                </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs float-right sidebar">
+                <h2 class="title-list"><span class="square">♦</span>Danh mục</h2>
+                <ul>
+                    <li><a href="#"><span class="square">♦</span>Tài liệu học tập</a></li>
+                    <li><a href="#" class="link-active"><span class="square">♦</span>Bài tập lớn - Đồ án</a></li>
+                    <li><a href="#"><span class="square">♦</span>Sách giáo khoa</a></li>
+                    <li><a href="#"><span class="square">♦</span>Tài liệu chuyên ngành</a></li>
+                    <li><a href="#"><span class="square">♦</span>Bộ sưu tập</a></li>
+                    <li><a href="#"><span class="square">♦</span>Đề thi</a></li>
+                    <li><a href="#"><span class="square">♦</span>Tài liệu VIP</a></li>
+                </ul>
+                <div class="ads1">
+                    <p>QUẢNG CÁO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-area">
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Trợ giúp</h2>
+                    <ul>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Phòng trọ</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Tài liệu</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Việc làm sinh viên</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // List View
+    function listView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "100%";
+        }
+    }
+
+    // Grid View
+    function gridView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "25%";
+        }
+    }
+
+    /* Optional: Add active class to the current button (highlight it) */
+    var container = document.getElementById("btnContainer");
+    var btns = container.getElementsByClassName("btn-list-view");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+</html>

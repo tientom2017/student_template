@@ -1,0 +1,25 @@
+.doccument-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3190ff;
+}
+
+.checked {
+    color: #ffeb00 !important;
+}
+
+.star {
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    cursor: pointer;
+}
+
+.btn-custom {
+    padding: 18px 56px;
+}

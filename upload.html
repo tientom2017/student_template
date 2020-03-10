@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./upload.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/upload.css">
     <title>Document</title>
 </head>
 
@@ -15,7 +15,7 @@
     <div class="header-area">
         <div class="container">
             <div class="wrap-header col-md-4">
-                <span class="st-logo">SINH VIÊN VIỆT NAM</span>
+                <span class="st-logo"><a href="./index.html">SINH VIÊN VIỆT NAM</a></span>
             </div>
             <div class="wrap-header col-md-8">
                 <div class="header-menu float-right">
@@ -62,15 +62,15 @@
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <p style="font-size: 23px; color: #505050;">Chia sẻ tài liệu của bạn để mọi người biết đến và có thêm thu nhập</p>
                             <span class="d-flex pt-3">
-                                <i class="fa fa-check check" aria-hidden="true"></i>
+                                <i class="fa fa-check check-img" aria-hidden="true"></i>
                                 <p class="desc-upload-txt pl-2">Điền các thông tin mà website yêu cầu, các trường có (*) là các trường bắt buộc</p>
                             </span>
                             <span class="d-flex ">
-                                <i class="fa fa-check check" aria-hidden="true"></i>
+                                <i class="fa fa-check check-img" aria-hidden="true"></i>
                                 <p class="desc-upload-txt pl-2">Bạn nên điền và chọn đúng thông tin để tài liệu của bạn được duyệt và được mọi người biết đến</p>
                             </span>
                             <span class="d-flex ">
-                                <i class="fa fa-check check" aria-hidden="true"></i>
+                                <i class="fa fa-check check-img" aria-hidden="true"></i>
                                 <p class="desc-upload-txt pl-2">File tài liệu hoặc demo (nếu có) có dung lượng tối đa lên tới 5GB</p>
                             </span>
 
@@ -79,30 +79,59 @@
                                 <div class="wrap-upload d-flex">
                                     <form class="form-horizontal w-100">
                                         <div class="form-group d-flex">
-                                            <label class="control-label col-md-2 text-right" for="email">Loại tài liệu</label>
+                                            <label class="control-label col-md-2 text-right" for="email">Ảnh đại diện <span class="required">*</span></label>
                                             <div class="col-md-10">
-                                                <input type="text" class="form-control" id="email">
+                                                <div style="width: 240px; height: 160px; float: left; background-color: #ff8e33;"></div>
+                                                <span class="d-flex pl-3">
+                                                    <i class="fa fa-check check-img" aria-hidden="true"></i>
+                                                    <p class="desc-upload-txt pl-2">Ảnh phù hợp sẽ có nhiều lượt xem</p>
+                                                </span>
+                                                <span class="d-flex pl-3">
+                                                    <i class="fa fa-check check-img" aria-hidden="true"></i>
+                                                    <p class="desc-upload-txt pl-2">Dung lượng tối đa 2MB</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex">
+                                            <label class="control-label col-md-2 text-right" for="email">Loại tài liệu <span class="required">*</span></label>
+                                            <div class="col-md-10">
+                                                <input type="text" class="form-control bd-none" id="email">
                                             </div>
                                         </div>
                                         <div class="form-group d-flex">
                                             <label class="control-label col-md-2 text-right" for="email">Trang hiển thị</label>
                                             <div class="col-md-10">
-                                                <input type="text" class="form-control" id="email">
+                                                <input type="text" class="form-control bd-none" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex">
+                                            <label class="control-label col-md-2 text-right" for="email">Trang hiển thị</label>
+                                            <div class="col-md-10 d-flex">
+                                                <input type="text" class="form-control bd-none w-25 mr-3" id="email">
+                                                đến
+                                                <input type="text" class="form-control bd-none w-25 ml-3" id="email">
                                             </div>
                                         </div>
                                         <div class="form-group d-flex">
                                             <label class="control-label col-md-2 text-right" for="email">File demo, sản phẩm đính kèm</label>
                                             <div class="col-md-10">
-                                                <input type="text" class="form-control" id="email">
+                                                <button class="ul-final"><i class="fa fa-cloud-download pr-2" aria-hidden="true"></i>Chọn file</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex">
+                                            <label class="control-label col-md-2 text-right" for="email">Tài liệu VIP</label>
+                                            <div class="col-md-10">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
                                             </div>
                                         </div>
                                         <div class="form-group d-flex">
                                             <label class="control-label col-md-2 text-right" for="email">Mô tả chi tiết</label>
                                             <div class="col-md-10">
-                                                <textarea style="resize: unset;" type="text" class="form-control" id="email"> </textarea>
+                                                <textarea style="resize: unset; height: 153px;" type="text" class="form-control bd-none" id="email"> </textarea>
                                                 <div class="d-flex justify-content-between">
-                                                    <button class="ul-final">Chọn tài liệu</button>
-                                                    <button class="ul-final">Tải lên ngay</button>
+                                                    <button class="ul-final mt-4"><i class="fa fa-paperclip pr-2" aria-hidden="true"></i>Chọn tài liệu</button>
+                                                    <button class="ul-final ul-btn mt-4"><i class="fa fa-upload pr-2" aria-hidden="true"></i>Tải lên ngay</button>
                                                 </div>
                                             </div>
                                         </div>
