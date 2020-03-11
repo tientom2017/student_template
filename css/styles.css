@@ -392,3 +392,76 @@
         color: #3190ff;
         padding-right: 8px;
     }
+
+    /* Modal payment */
+    .dialog-payment {
+        max-width: 1000px !important;
+    }
+
+    .dialog-payment .modal-head {
+        background-color: #44d560;
+        font-size: 36px;
+    }
+
+    .modal-body-payment {
+        padding-top: 20px;
+    }
+
+    .modal-body-payment .control-label {
+        font-size: 20px !important;
+        font-weight: normal !important;
+    }
+
+    .step h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .phone-momo {
+        color: #3190ff;
+        font-size: 36px;
+        background-color: #f1f1f1;
+        padding: 20px 90px;
+        border: none;
+    }
+
+    .guid-doc {
+        font-size: 20px;
+        color: #505050;
+    }
+
+    .code-sms {
+        font-size: 36px;
+        font-weight: normal;
+        color: #ff8e33;
+    }
+
+    .transfer-info {
+        background-color: #f1f1f1;
+        padding: 25px;
+    }
+    .transfer-info p {
+        font-size: 14px;
+    }
+
+    .transfer-info a {
+        color: #ff8e33 !important;
+    }
+
+    #nav-transfer p{
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #505050;
+    }
+
+    .option-transfer {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #505050;
+    }
+
+    .nav-tabs {
+        border-bottom: none !important;
+    }
