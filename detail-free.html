@@ -70,13 +70,13 @@
                     </div>
 
                     <div class="pl-1">
-                        <a class="btn btn-custom btn-coins" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a data-toggle="modal" data-target="#cash-done" class="btn btn-custom btn-coins" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Nạp xu
                         </a>
                     </div>
 
                     <div class="pl-2">
-                        <a class="btn btn-custom btn-upload" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a data-toggle="modal" data-target="#vip" class=" btn btn-custom btn-upload" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tải lên
                         </a>
                     </div>
@@ -117,8 +117,8 @@
                     </div>
                     <div class="d-flex justify-content-between">
                         <div class="btn-download">
-                            <button class="btn-customs mr-3"><i class="fa fa-heart"></i> Quan tâm</button>
-                            <button class="btn-customs"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống (20 xu)</button>
+                            <button data-toggle="modal" data-target="#down-success" class="btn-customs mr-3"><i class="fa fa-heart"></i> Quan tâm</button>
+                            <button data-toggle="modal" data-target="#error" class="btn-customs"><i class="fa fa-download" aria-hidden="true"></i> Tải xuống (20 xu)</button>
                         </div>
                         <span class="sp-warning"><i class="fa fa-warning"></i> Báo cáo vi phạm</span>
                     </div>
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="file-download p-3 mt-4">
-                        <button class="btn-customs"><i class="fa fa-download"></i>Tải xuống (20 xu)</button>
+                        <button data-toggle="modal" data-target="#error" class="btn-customs"><i class="fa fa-download"></i>Tải xuống (20 xu)</button>
                     </div>
                     <div class="comment">
                         <!-- comment -->
@@ -286,6 +286,123 @@
                         <li><a href="#">Quy định sử dụng</a></li>
                         <li><a href="#">Chính sách bảo mật</a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dialog-error" style="width: 1000px;" role="document">
+            <div class="modal-content">
+                <div class="modal-head modal-head-err text-center">
+                    <h2 class="pb-3">THAO TÁC KHÔNG THÀNH CÔNG</h2>
+                    <img src="./images/warning.PNG" alt="">
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <p class="mt-1 pb-3 err-info">Thực hiện không thành công, có thể do kết nối mạng hoặc lý do khác</p>
+                                <button class=" register">Đăng ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="down-success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dialog-error" style="width: 1000px;" role="document">
+            <div class="modal-content">
+                <div class="modal-head modal-head-down-success text-center">
+                    <h2 class="pb-3">THAO TÁC THÀNH CÔNG</h2>
+                    <img src="./images/down.PNG" alt="">
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <p class="mt-1 pb-3 err-info">Tài liệu đã được tải về máy của bạn</p>
+                                <button class=" register">Đóng lại</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cash-done" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dialog-error" style="width: 1000px;" role="document">
+            <div class="modal-content">
+                <div class="modal-head cash-done text-center">
+                    <h2 class="pb-3">NẠP XU THÀNH CÔNG</h2>
+                    <img src="./images/done.PNG" alt="">
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <h3 class="tks-for-cash pt-2 pb-3">CHÚC MỪNG BẠN ĐÃ NẠP THÀNH CÔNG 50 XU</h3>
+                                <p class="mt-1 pb-3 err-info">Xu có thể dùng để tải về tài liệu, đăng quảng cáo hoặc rút về tài khoản</p>
+                                <button class=" register">Đóng lại</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dialog-error" style="width: 1000px;" role="document">
+            <div class="modal-content">
+                <div class="modal-head cash-done text-center">
+                    <h2 class="pb-3">ĐĂNG KÝ TÀI LIỆU VIP</h2>
+                </div>
+                <div class="modal-body modal-vip">
+                    <div class="payment-info row col justify-content-between pt-3">
+                        <div>
+                            <i class="fa fa-user"></i>
+                            <span> Lâm Quang Phúc (Mã thành viên: 7182391)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span> lamquanphuc1996@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-money"></i>
+                            <span> Tài khoản: <span class="cash">0 xu</span></span>
+                        </div>
+                        <div>
+                            <i class="fa fa-money"></i>
+                            <span> Khả dụng: <span class="cash">0 xu</span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="p-4">Là tài liệu VIP sẽ được mọi người biết đến nhiều hơn vì thế sẽ tăng lượt tải. Tài khoản của bạn sẽ bị trừ 20 Xu khi đăng ký tài liệu là tài liệu VIP</p>
+                    <div class="row">
+                        <p class="col-md-6 text-right" style="line-height: 3;">Khả dụng</p>
+                        <p class="col-md-6" style="font-size: 36px; color: #3190ff;">40 Xu</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-6 text-right">Số xu bị trừ</p>
+                        <p class="col-md-6 orange">40 Xu</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-6 text-right">Tài khoản còn lại</p>
+                        <p class="col-md-6 orange">40 Xu</p>
+                    </div>
+                    <div class="btn-payment text-center mt-4">
+                        <button class="btn-vip mr-2 b-orange">Hủy</button>
+                        <button class="btn-vip ml-2 b-blue">Thanh toán</button>
+                    </div>
+                    <div class="text-center m-4">
+                        <span>Xem hướng dẫn nạp tiền <a href="#" class="orange ">Tại đây</a></span>
+                    </div>
                 </div>
             </div>
         </div>

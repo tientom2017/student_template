@@ -1,7 +1,7 @@
     body {
         /* font-family: HelveticaNeue; */
     }
-
+    
     .container {
         overflow: hidden;
     }
@@ -15,9 +15,9 @@
         height: 65px;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: #fafafa;
-        position: fixed;
+        /* position: fixed;
         width: 100%;
-        z-index: 999999;
+        z-index: 999999; */
     }
     
     .wrap-header {
@@ -140,17 +140,17 @@
         background: rgba(0, 0, 0, 0.5);
         padding: 5px 10px;
     }
-
+    
     .doc-details:hover {
         height: 125px;
     }
-
+    
     .doc-details a {
         color: #ffffff;
         font-size: 14px;
         font-weight: bold;
     }
-
+    
     .doc-details a:hover {
         color: #ffffff;
     }
@@ -163,7 +163,7 @@
         color: #ffeb00;
         padding-top: 5px;
     }
-
+    
     .item-detail-title {
         background-color: #3190ff;
         height: 200px;
@@ -238,24 +238,25 @@
         letter-spacing: normal;
         color: #676a6c;
     }
-
+    
     .btn-custom {
         border-radius: 0px;
         border: 1px solid #ced4da;
         font-size: 12px;
         color: #505050;
     }
-    .btn-coins{
-								  
+    
+    .btn-coins {
         background-color: #44d560;
         color: #ffffff;
     }
-    .btn-upload{
+    
+    .btn-upload {
         background-color: #ff8e33;
         color: #ffffff;
     }
-
-    .btn-detail {		
+    
+    .btn-detail {
         font-size: 12px;
         font-weight: bold;
         font-stretch: normal;
@@ -267,13 +268,13 @@
         border: none;
         cursor: pointer;
     }
-
+    
     .wrap-btn-detail {
         justify-content: space-between;
     }
-
+    
     .fa-angle {
-        position: absolute;		   
+        position: absolute;
         color: #ffffff;
         top: 10px;
         right: 14px;
@@ -395,31 +396,31 @@
         color: #3190ff;
         padding-right: 8px;
     }
-
     /* Modal payment */
+    
     .dialog-payment {
         max-width: 1000px !important;
     }
-
+    
     .dialog-payment .modal-head {
         background-color: #44d560;
         font-size: 36px;
     }
-
+    
     .modal-body-payment {
         padding-top: 20px;
     }
-
+    
     .modal-body-payment .control-label {
         font-size: 20px !important;
         font-weight: normal !important;
     }
-
+    
     .step h3 {
         font-size: 20px;
         font-weight: bold;
     }
-
+    
     .phone-momo {
         color: #3190ff;
         font-size: 36px;
@@ -427,44 +428,72 @@
         padding: 20px 90px;
         border: none;
     }
-
+    
     .guid-doc {
         font-size: 20px;
         color: #505050;
     }
-
+    
     .code-sms {
         font-size: 36px;
         font-weight: normal;
         color: #ff8e33;
     }
-
+    
     .transfer-info {
         background-color: #f1f1f1;
         padding: 25px;
     }
+    
     .transfer-info p {
         font-size: 14px;
     }
-
+    
     .transfer-info a {
         color: #ff8e33 !important;
     }
-
-    #nav-transfer p{
+    
+    #nav-transfer p {
         font-size: 20px;
         font-weight: normal;
         line-height: 1.5;
         color: #505050;
     }
-
+    
     .option-transfer {
         font-size: 20px;
         font-weight: bold;
         line-height: 1.5;
         color: #505050;
     }
-
+    
     .nav-tabs {
         border-bottom: none !important;
+    }
+    
+    .input-money {
+        background-color: unset !important;
+        border-bottom: 1px solid #dddddd !important;
+    }
+    
+    .rcm-price {
+        font-size: 20px !important;
+        font-weight: bold;
+        color: #505050;
+    }
+    
+    .orange {
+        color: #ff8e33 !important;
+    }
+    
+    .blue {
+        color: #3190ff !important;
+    }
+    
+    .b-orange {
+        background-color: #ff8e33 !important;
+    }
+    
+    .b-blue {
+        background-color: #3190ff !important;
     }
