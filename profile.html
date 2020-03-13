@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/list-document.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="header-area">
+        <div class="container">
+            <div class="wrap-header col-md-4">
+                <span class="st-logo">SINH VIÊN VIỆT NAM</span>
+            </div>
+            <div class="wrap-header col-md-8">
+                <div class="header-menu float-right">
+                    <ul>
+                        <li style="padding-left: 0px;"><a href="#">Chia sẻ phòng trọ</a></li>
+                        <li><a href="#" class="link-active">Chia sẻ tài liệu</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#payment">Việc làm sinh viên</a></li>
+                        <li><a href="#" class="" data-toggle="modal" data-target="#signIn">Hỗ trợ</a></li>
+                        <li><a href="#" class="" data-toggle="modal" data-target="#register">Đăng nhập/ Đăng ký</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs float-left sidebar">
+                    <div class="ads1">
+                        <a href="#">Ảnh đại diện</a>
+                    </div>
+                    <h2 class="title-list"></h2>
+                    <ul class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <li><a class="" data-toggle="tab" role="tab" href="#profile" aria-controls="profile"
+                                aria-selected="true"><span class="square">♦</span>Thông tin tài khoản</a></li>
+                        <li><a class="" data-toggle="tab" role="tab" href="#my-document" aria-controls="my-document"
+                                aria-selected="false" class="link-active"><span class="square">♦</span>Tài liệu của
+                                tôi</a></li>
+                        <li><a class="" data-toggle="tab" role="tab" href="#change-pass" aria-controls="change-pass"
+                                aria-selected="false"><span class="square">♦</span>Đổi mật khẩu</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12 float-right">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active change-pass-tab" id="profile" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <h2 class="text-center p-3">THÔNG TIN TÀI KHOẢN</h2>
+                            <form class="form-horizontal w-100">
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Họ và tên<span class="required">*</span></label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Ngáy sinh</label>
+                                    <div class="col-md-6 d-flex">
+                                        <div class="mr-2">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>29</option>
+                                            </select>
+                                        </div>
+                                        <div class="mr-2">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Tháng 7</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="mr-2">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>1996</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Giới tính</label>
+                                    <div class="col-md-6">
+                                        <div class="nav nav-tabs" role="tablist">
+                                            <div>
+                                                <input class="pr-2" id="optDaily" checked name="intervaltype" type="radio"
+                                                    data-target="#scheduleDaily">
+                                                <label for="optDaily" class="mr-5 option-transfer">Nam </label>
+                                            </div>
+                                            <div>
+                                                <input id="optWeekly" class="pr-2 " name="intervaltype" type="radio"
+                                                    data-target="#scheduleWeekly">
+                                                <label for="optWeekly" class="option-transfer">Nữ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Nơi sinh sống</label>
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Ha Noi</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Ngành nghề</label>
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Sinh viên</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Email</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Tự giới thiệu</label>
+                                    <div class="col-md-6">
+                                        <textarea style="resize: unset; height: 153px;" type="text" class="form-control bd-none" id="email"> </textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email"></label>
+                                    <div class="col-md-6">
+                                        <button class="update-profile-btn">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade my-document" id="my-document" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <h2 class="text-center p-3">TÀI LIÊU CỦA TÔI</h2>
+                            <div class="wrap-list-doc">
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-details">
+                                        <img src="./images/73925_photo1.png" alt="">
+                                        <div class="doc-details">
+                                            <div>
+                                                <a href="#">Bộ 150+ luận văn thạc sĩ quản trị nhân lực</a>
+                                                <i class="fa fa-angle-right fa-angle"></i>
+                                            </div>
+                                            <div class="doc-details-info">
+                                                <div><i class="fa fa-eye" aria-hidden="true"></i> 1039</div>
+                                                <div>172 tài liệu</div>
+                                                <div>720 lượt tải</div>
+                                            </div>
+                                            <div class="d-flex pt-2 wrap-btn-detail">
+                                                <button class="btn-detail"><i class="fa fa-heart" aria-hidden="true"></i> Quan
+                                                    tâm</button>
+                                                <button class="btn-detail"><i class="fa fa-download" aria-hidden="true"></i> Tải
+                                                    xuống</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade change-pass-tab" id="change-pass" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <h2 class="text-center p-3">ĐỔI MẬT KHẨU</h2>
+                            <form class="form-horizontal w-100">
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Tên đăng nhập<span class="required">*</span></label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Password cũ</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Password mới<span class="required">*</span></label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email">Nhập lại Password mới</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bd-none" id="email">
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label class="control-label col-md-4 text-right" for="email"></label>
+                                    <div class="col-md-6">
+                                        <button class="update-profile-btn">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-area">
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Trợ giúp</h2>
+                    <ul>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Phòng trọ</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Tài liệu</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 float-left">
+                    <h2>Việc làm sinh viên</h2>
+                    <ul>
+                        <li><a href="#">Tài liệu dành cho</a></li>
+                        <li><a href="#">Hình thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn đăng ký</a></li>
+                        <li><a href="#">Quy định sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+    crossorigin="anonymous "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('input[name="intervaltype"]').click(function () {
+            $(this).tab('show');
+            $(this).removeClass('active');
+        });
+    })
+    function myFunction() {
+        var x = document.getElementsByClassName("toggle-password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+</script>
+
+</html>
